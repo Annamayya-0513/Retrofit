@@ -36,10 +36,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Initialize();
 
+
 ///Create java class pojo(retrive pojo)
-///create java class API
+///create java class API (GET Request)
 
     }
+
+
 
     private void Initialize() {
         textView = (TextView)findViewById(R.id.textView);
@@ -48,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Api() {
-
 
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl(RetrofitAPI.url)
@@ -95,4 +97,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+
 }

@@ -1,15 +1,13 @@
 package com.example.retrofit;
 
-public class RetrofitPojo {
-
+public class PostRequestPojo {
     private int userid;
     private Integer id;
     private  String title;
     private String body;
 
-    public RetrofitPojo(int userid,  String title, String body) {
+    public PostRequestPojo(int userid,  String title, String body) {
         this.userid = userid;
-
         this.title = title;
         this.body = body;
     }
